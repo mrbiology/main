@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+    <title>مهدی گوهری</title>
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            text-align: right;
+        }
+        header {
+            background: rgba(106, 17, 203, 0.8); 
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+          max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #6a11cb;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .chapter {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-left: 5px solid #6a11cb;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+   .box {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+   .explanations {
+      border: 2px solid #007bff;
+    }
+
+   .explanations h3 {
+      background-color: #007bff;
+      color: #fff;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+   .level1 {
+      border: 2px solid #007bff;
+    }
+
+   .level1 h3 {
+      background-color: #007bff;
+      color: #fff;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+   .level2 {
+      border: 2px solid #ff9900;
+    }
+
+   .level2 h3 {
+      background-color: #ff9900;
+      color: #fff;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+   .level3 {
+      border: 2px solid #ff4400;
+    }
+
+   .level3 h3 {
+      background-color: #ff4400;
+      color: #fff;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+
+   .contact {
+      border: 2px solid #ffc107;
+    }
+
+   .contact h3 {
+      background-color: #ffc107;
+      color: #333;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+    .noe {
+      border: 2px solid #E84A5F;
+    }
+
+   .noe h3 {
+      background-color: #E84A5F;
+      color: #333;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+    .kal {
+      border: 2px solid #F8B195;
+    }
+
+   .kal h3 {
+      background-color: #F8B195;
+      color: #333;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+
+   .additional-items {
+      border: 2px solid #28a745;
+    }
+
+   .additional-items h3 {
+      background-color: #28a745;
+      color: #fff;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+
+   .box p {
+      margin: 0.5rem 0;
+    }
+
+   .box ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+   .box li {
+      margin-bottom: 0.5rem;
+    }
+        .download-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #45a049;
+        }
+        .azmoon {
+            background-color: #0014c5;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .azmoon:hover {
+            background-color: #c20000;
+        }
+        .movie-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .movie-player {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        .movie-player iframe, .movie-player object, .movie-player embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .subject {
+            padding: 10px;
+            background-color: #f7f7f7;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top: 1px solid #ddd;
+        }
+        .subject h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://iili.io/dESYwDG.png" alt="zist Logo">
+        <h1>زیست به سبک گوهری</h1>
+    </header>
+    <section id="additional">
+      <div class="box level1">
+        <h3>زیست دهم</h3>
+        
+        
+      <div class="box kal">
+      <h3>فصل 1</h3>
+      <section class="chapter" id="videos">
+        <div class="movie-container">
+          <div class="movie-player">
+            <div id="55875283783"><script type="text/JavaScript" src="https://www.aparat.com/embed/jyjtlg3?data[rnddiv]=55875283783&data[responsive]=yes"></script></div>
+          </div>
+          <div class="subject">
+              <h2>خط شناسی زیست دهم فصل 1</h2>
+        </div>
+      </section>
+      
+      </div>
+      <div class="box kal">
+      <h3>فصل 2</h3>
+      <section class="chapter" id="videos">
+        <div class="movie-container">
+          <div class="movie-player">
+            <div id="42804728576"><script type="text/JavaScript" src="https://www.aparat.com/embed/dra3rgt?data[rnddiv]=42804728576&data[responsive]=yes"></script></div>
+          </div>
+          <div class="subject">
+              <h2>خط شناسی زیست دهم فصل 2</h2>
+        </div>
+      </section>
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+      </div>
+      <div class="box kal">
+      <h3>فصل 3</h3>
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+      </div>
+      <div class="box kal">
+        <h3>فصل 4</h3>
+        </section>
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+      </div>
+      <div class="box kal">
+        <h3>فصل 5</h3>
+          </div>
+        </section>
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+      </div>
+      <div class="box kal">
+        <h3>فصل 6</h3>
+          </div>
+        </section>
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+      </div>        
+      <div class="box kal">
+        <h3>فصل 7</h3>
+          </div>
+        </section>
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+      </div>
+        
+        
+        
+       </div> 
+    </section>
+    
+    
+    
+    
+    
+    <section id="additional">
+      <div class="box level2">
+        <h3>زیست یازدهم</h3>
+        
+        
+      <div class="box kal">
+      <h3>فصل 1</h3>
+        <section class="chapter" id="videos">
+          <div class="movie-container">
+            <div class="movie-player">
+              <div id="43627399564"><script type="text/JavaScript" src="https://www.aparat.com/embed/yubi553?data[rnddiv]=43627399564&data[responsive]=yes"></script></div>
+            </div>
+            <div class="subject">
+                <h2>خط شناسی زیست یازدهم فصل 1</h2>
+          </div>
+        </section>
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/86" class="azmoon" target="_blank">آزمون گفتار 1</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/87" class="azmoon" target="_blank">آزمون گفتار 2 </a>
+      </div>
+      <div class="box kal">
+      <h3>فصل 2</h3>
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/88" class="azmoon" target="_blank">آزمون گفتار 1 و 2</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/90" class="azmoon" target="_blank">آزمون گفتار 3</a>
+      </div>
+      <div class="box kal">
+      <h3>فصل 3</h3>
+
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/91" class="azmoon" target="_blank">آزمون گفتار 1</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/92" class="azmoon" target="_blank">آزمون گفتار 2</a>
+      </div>
+      <div class="box kal">
+      <h3>فصل 4</h3>
+
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/93" class="azmoon" target="_blank">آزمون گفتار 1 و 2</a>
+      </div>
+      <div class="box kal">
+      <h3>فصل 5</h3>
+
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/94" class="azmoon" target="_blank">آزمون گفتار 1 و 2</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/95" class="azmoon" target="_blank">آزمون گفتار 2 </a>
+      </div>
+      <div class="box kal">
+      <h3>فصل 6</h3>
+
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/96" class="azmoon" target="_blank">آزمون گفتار 1 و 2</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/97" class="azmoon" target="_blank">آزمون گفتار 3</a>
+      </div>        
+      <div class="box kal">
+      <h3>فصل 7</h3>
+
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/98" class="azmoon" target="_blank">آزمون گفتار 1</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/99" class="azmoon" target="_blank">آزمون گفتار 2 </a>
+        <a href="https://weblite.me/zist_mahdi_gohari/100" class="azmoon" target="_blank">آزمون گفتار 3</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/101" class="azmoon" target="_blank">آزمون گفتار 4</a>
+      </div>
+      <div class="box kal">
+      <h3>فصل 8</h3>
+
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/102" class="azmoon" target="_blank">آزمون گفتار 1 و 2</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/103" class="azmoon" target="_blank">آزمون گفتار 3</a>
+      </div>
+      <div class="box kal">
+      <h3>فصل 9</h3>
+
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/104" class="azmoon" target="_blank">آزمون گفتار 1</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/105" class="azmoon" target="_blank">آزمون گفتار 2 </a>
+      </div>
+        
+        
+       </div> 
+    </section>
+    
+    
+    
+    
+    
+    
+    <section id="additional">
+      <div class="box level3">
+        <h3>زیست دوازدهم</h3>
+        <div class="box kal">
+         <h3>فصل 1</h3>
+         <section class="chapter" id="videos">
+          <div class="movie-container">
+            <div class="movie-player">
+              <div id="53649461097"><script type="text/JavaScript" src="https://www.aparat.com/embed/djbk0f4?data[rnddiv]=53649461097&data[responsive]=yes"></script></div>
+            </div>
+            <div class="subject">
+                <h2>خط شناسی زیست دوازدهم فصل 1 قسمت 1</h2>
+            </div>
+            <div class="movie-player">
+              <div id="84767809459"><script type="text/JavaScript" src="https://www.aparat.com/embed/llx1543?data[rnddiv]=84767809459&data[responsive]=yes"></script></div>
+            </div>
+            <div class="subject">
+                <h2>خط شناسی زیست دوازدهم فصل 1 قسمت 2</h2>
+            </div>
+            <div class="movie-player">
+                <div id="27388957729"><script type="text/JavaScript" src="https://www.aparat.com/embed/xaxxt17?data[rnddiv]=27388957729&data[responsive]=yes"></script></div>
+            </div>
+           <div class="subject">
+              <h2>خط شناسی زیست دوازدهم فصل 1 قسمت 3</h2>
+            </div>
+          </section>
+          </div>
+         <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+         <a href="https://weblite.me/zist_mahdi_gohari/60" class="azmoon" target="_blank">آزمون گفتار 1</a>
+         <a href="https://weblite.me/zist_mahdi_gohari/61" class="azmoon" target="_blank">آزمون گفتار 2 </a>
+         <a href="https://weblite.me/zist_mahdi_gohari/62" class="azmoon" target="_blank">آزمون گفتار 3</a>
+          </div>
+          <div class="box kal">
+       <div class="box kal">
+       <h3>فصل 2</h3>
+        <section class="chapter" id="videos">
+          <div class="movie-container">
+            <div class="movie-player">
+              <div id="70959717728"><script type="text/JavaScript" src="https://www.aparat.com/embed/jgo4f6n?data[rnddiv]=70959717728&data[responsive]=yes"></script></div>
+            </div>
+            <div class="subject">
+                <h2>خط شناسی زیست دوازدهم فصل 2</h2>
+          </div>
+        </section>
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/63" class="azmoon" target="_blank">آزمون گفتار 1</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/64" class="azmoon" target="_blank">آزمون گفتار 2</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/65" class="azmoon" target="_blank">آزمون گفتار 3</a>
+      </div>
+       <div class="box kal">
+       <h3>فصل 3</h3>
+        <section class="chapter" id="videos">
+          <div class="movie-container">
+            <div class="movie-player">
+              <div id="95643424078"><script type="text/JavaScript" src="https://www.aparat.com/embed/ige15mv?data[rnddiv]=95643424078&data[responsive]=yes"></script></div>
+            </div>
+            <div class="subject">
+                <h2>خط شناسی زیست دوازدهم فصل 3</h2>
+          </div>
+        </section>
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/66" class="azmoon" target="_blank">آزمون گفتار 1</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/67" class="azmoon" target="_blank">آزمون گفتار 2</a>
+       </div>
+       <div class="box kal">
+       <h3>فصل 4</h3>
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/80" class="azmoon" target="_blank">آزمون گفتار 1</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/81" class="azmoon" target="_blank">آزمون گفتار 2</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/82" class="azmoon" target="_blank">آزمون گفتار 3</a>
+       </div>
+       <div class="box kal">
+       <h3>فصل 5</h3>
+        <section class="chapter" id="videos">
+          <div class="movie-container">
+            <div class="movie-player">
+              <div id="90112909019"><script type="text/JavaScript" src="https://www.aparat.com/embed/ydu5r8c?data[rnddiv]=90112909019&data[responsive]=yes"></script></div>
+            </div>
+            <div class="subject">
+                <h2>خط شناسی زیست دوازدهم فصل 5</h2>
+          </div>
+        </section>
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/69" class="azmoon" target="_blank">آزمون گفتار 1</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/70" class="azmoon" target="_blank">آزمون گفتار 2</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/71" class="azmoon" target="_blank">آزمون گفتار 3</a>
+       </div>
+       <div class="box kal">
+       <h3>فصل 6</h3>
+        <section class="chapter" id="videos">
+          <div class="movie-container">
+            <div class="movie-player">
+              <div id="22713142959"><script type="text/JavaScript" src="https://www.aparat.com/embed/cdi74bb?data[rnddiv]=22713142959&data[responsive]=yes"></script></div>
+            </div>
+            <div class="subject">
+                <h2>خط شناسی زیست دوازدهم فصل 6</h2>
+          </div>
+        </section>
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/71" class="azmoon" target="_blank">آزمون گفتار 1</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/72" class="azmoon" target="_blank">آزمون گفتار 2</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/73" class="azmoon" target="_blank">آزمون گفتار 3</a>
+       </div>        
+       <div class="box kal">
+       <h3>فصل 7</h3>
+        <section class="chapter" id="videos">
+          <div class="movie-container">
+            <div class="movie-player">
+              <div id="21234023477"><script type="text/JavaScript" src="https://www.aparat.com/embed/zhj7k8n?data[rnddiv]=21234023477&data[responsive]=yes"></script></div>
+            </div>
+            <div class="subject">
+                <h2>خط شناسی زیست دوازدهم فصل 7</h2>
+          </div>
+        </section>
+        <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/74" class="azmoon" target="_blank">آزمون گفتار 1</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/75" class="azmoon" target="_blank">آزمون گفتار 2</a>
+        <a href="https://weblite.me/zist_mahdi_gohari/76" class="azmoon" target="_blank">آزمون گفتار 3</a>
+       </div>
+       <div class="box kal">
+        <h3>فصل 8</h3>
+        <section class="chapter" id="videos"></section>
+          <div class="movie-container">
+            <div class="movie-player">
+              <div id="94789242555"><script type="text/JavaScript" src="https://www.aparat.com/embed/nhebq7y?data[rnddiv]=94789242555&data[responsive]=yes"></script></div>
+            </div>
+            <div class="subject">
+                <h2>خط شناسی زیست دوازدهم فصل 8</h2>
+          </div>
+        </section>
+          <a href="https://mrbiology.github.io/main/404" class="download-button" target="_blank">دانلود تکالیف</a>
+          <a href="https://weblite.me/zist_mahdi_gohari/77" class="azmoon" target="_blank">آزمون گفتار 1</a>
+          <a href="https://weblite.me/zist_mahdi_gohari/78" class="azmoon" target="_blank">آزمون گفتار 2</a>
+          <a href="https://weblite.me/zist_mahdi_gohari/79" class="azmoon" target="_blank">آزمون گفتار 3</a>
+        </div>        
+        
+        
+       </div> 
+    </section>
+    
+</body>
+</html>
